@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry Form</title>
+
+<!-- Font Awesome (ICON FIX) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.header {
+    background: linear-gradient(to right, #0f172a, #1e3a8a);
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 10px 0 5px;
+}
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.form {
+    padding: 25px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 0 20px;
+}
+
+.option {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #0f172a, #1e3a8a);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding: 15px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+        <h1>Enquiry Form</h1>
+        <p>Take the first step towards your career growth</p>
+    </div>
+
+    <div class="form">
+
+        <div class="row">
+            <div class="input-group">
+                <label>Full Name *</label>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="input-group">
+                <label>Email Address *</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Contact Number *</label>
+                <input type="text" placeholder="10-digit mobile number">
+            </div>
+            <div class="input-group">
+                <label>Qualification</label>
+                <input type="text" placeholder="e.g., B.Sc, MCA, 12th Pass">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>City</label>
+                <input type="text" placeholder="Your city">
+            </div>
+        </div>
+
+        <label>Where do you find us from? *</label>
+        <div class="options">
+            <label class="option"><input type="radio" name="source"> Hackervlog Instagram</label>
+            <label class="option"><input type="radio" name="source"> Hacker Vlog Shorts</label>
+            <label class="option"><input type="radio" name="source"> Cyber Kaksha Shorts</label>
+            <label class="option"><input type="radio" name="source"> Hacker Vlog Channel</label>
+            <label class="option"><input type="radio" name="source"> Cyber Kaksha Channel</label>
+            <label class="option"><input type="radio" name="source"> Hackervlog Instagram</label>
+            <label class="option"><input type="radio" name="source"> Cyberexpert Instagram</label>
+            <label class="option"><input type="radio" name="source"> WhatsApp Broadcast</label>
+            <label class="option"><input type="radio" name="source"> Website</label>
+            <label class="option"><input type="radio" name="source"> WhatsApp</label>
+            <label class="option"><input type="radio" name="source"> Advertisement</label>
+        </div>
+
+        <label>Address</label>
+        <textarea placeholder="Enter your full address"></textarea>
+
+        <label>Additional Notes / Questions</label>
+        <textarea placeholder="Any specific questions or requirements?"></textarea>
+
+        <br>
+
+        <!-- BUTTON WITH TELEGRAM ICON -->
+        <button>
+            <i class="fa-brands fa-telegram"></i>
+            Submit Enquiry
+        </button>
+
+    </div>
+
+    <div class="footer">
+        © 2026 ASD Academy. All rights reserved. <br>
+        We'll get back to you within 24 hours.
+    </div>
+
+</div>
+
+</body>
+</html>
